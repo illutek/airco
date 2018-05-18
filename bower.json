@@ -1,0 +1,19 @@
+{
+  "name": "Airco Dirk",
+  "description": "Airco Dirk Noben",
+  "main": "index.js",
+  "authors": [
+    "Stefaan Vandenborne <stefanvandenborne@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}

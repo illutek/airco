@@ -1,0 +1,38 @@
+
+
+.nav {
+    padding: 1rem;
+    align-self: center;
+    justify-self: center;
+
+    @include respond(phone) {
+        display: none;
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--color--red);
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 2px;
+            background: var(--color--red);
+            position: absolute;
+            top: -.75rem;
+            left: 0;
+            right: 0;
+            transform: scale(0, 1);
+            transition: transform ease-in-out 250ms;
+        }
+
+        &:hover::before {
+            transform: scale(1, 1);
+        }
+    }
+
+    & li {
+        padding-bottom: 2rem;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "AircoDirk",
+  "version": "0.0.1",
+  "description": "Airco Dirk Noben",
+  "main": "index.js",
+  "author": "Stefaan Vandenborne <stefanvandenborne@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-clean-css": "~2.0.12",
+    "gulp-imagemin": "~3.0.3",
+    "gulp-plumber": "~1.1.0",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "~2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
