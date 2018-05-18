@@ -1,14 +1,31 @@
-
+// /////////////////////////
+// @@ NAVIGATION
+// ////////////////////////
 
 .nav {
     padding: 1rem;
     align-self: center;
     justify-self: center;
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
 
     @include respond(phone) {
-        display: none;
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
     }
 
+    @include respond(small-phone) {
+        grid-column: 1 / -1;
+        justify-self: auto;
+    }
+
+
+    &__list {
+        @include respond(small-phone) {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
     & a {
         text-decoration: none;
         color: var(--color--red);

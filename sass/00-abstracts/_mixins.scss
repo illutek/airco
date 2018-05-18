@@ -1,4 +1,6 @@
-
+// /////////////////////////
+// @@ MIXINS
+// ////////////////////////
 
 @mixin respond($breakpoint) {
     @if $breakpoint == smallest-phone {
