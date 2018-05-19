@@ -1,0 +1,17 @@
+// ///////////////////////
+// @@ ++ UTILITIES
+// ///////////////////////
+
+.u-image-float {
+  &--left {
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &--right {
+    float: right;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+}

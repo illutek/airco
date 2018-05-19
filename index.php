@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3878171-14"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-3878171-14');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,26 +27,17 @@
 
             <div class="nav">
                 <ul class="nav__list">
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Info</a></li>
-                    <li><a href='#'>Contact</a></li>
+                  <?php require "includes/navigation.php"; ?>
                 </ul>
             </div>
       
             <div class="sidebar">
-                <p>
-                    Noben Dirk <br>
-                    Beverststraat 29b <br>
-                    3600 Genk <br>
-                    Telefoon 089/351501 <br>
-                    GSM 0479/408953 <br>
-                    BE 638.623.155 <br>
-                </p>
-                
+              <?php require 'includes/sidebar.inc.php'; ?>                
             </div>
         
             <div class="content">
-                <p>Voor een correcte werking en professioneel onderhoud van uw autoairconditioning 
+                <h1>Dirk Noben</h1>
+                <p>Voor een correcte werking en professioneel onderhoud van uw auto-airconditioning 
                 moet u bij Dirk Noben zijn. Of het nu gaat om schadereparatie, bijvulling van airco-installaties 
                 in auto’s, landbouwmachines, vrachtwagens e.d., opsporen van lekkages en geurhinder, Dirk Noben, 
                 specialist in onderhoud en service van autoairco, met meer dan 30 jaar ervaring, helpt u gegarandeerd verder!</p>

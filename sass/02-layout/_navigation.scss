@@ -3,53 +3,52 @@
 // ////////////////////////
 
 .nav {
-    padding: 1rem;
-    align-self: center;
-    justify-self: center;
-    grid-column: 3 / -1;
-    grid-row: 1 / 2;
+  padding: 1rem;
+  align-self: center;
+  justify-self: center;
+  grid-column: 3 / -1;
+  grid-row: 1 / 2;
 
-    @include respond(phone) {
-        grid-column: 2 / -1;
-        grid-row: 2 / 3;
-    }
+  @include respond(phone) {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+  }
 
+  @include respond(small-phone) {
+    grid-column: 1 / -1;
+    justify-self: auto;
+  }
+
+  &__list {
     @include respond(small-phone) {
-        grid-column: 1 / -1;
-        justify-self: auto;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: var(--color--red);
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      background: var(--color--red);
+      position: absolute;
+      top: -0.75rem;
+      left: 0;
+      right: 0;
+      transform: scale(0, 1);
+      transition: transform ease-in-out 250ms;
     }
 
-
-    &__list {
-        @include respond(small-phone) {
-            display: flex;
-            justify-content: space-around;
-        }
+    &:hover::before {
+      transform: scale(1, 1);
     }
-    & a {
-        text-decoration: none;
-        color: var(--color--red);
-        position: relative;
+  }
 
-        &::before {
-            content: '';
-            display: block;
-            height: 2px;
-            background: var(--color--red);
-            position: absolute;
-            top: -.75rem;
-            left: 0;
-            right: 0;
-            transform: scale(0, 1);
-            transition: transform ease-in-out 250ms;
-        }
-
-        &:hover::before {
-            transform: scale(1, 1);
-        }
-    }
-
-    & li {
-        padding-bottom: 2rem;
-    }
+  & li {
+    padding-bottom: 2rem;
+  }
 }
