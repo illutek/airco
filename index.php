@@ -45,6 +45,6 @@
 
     </div>    
 </div>
-
+<script src="bower_components/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
 </body>
 </html>

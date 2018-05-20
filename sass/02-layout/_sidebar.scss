@@ -27,6 +27,24 @@
     @include respond(small-phone) {
       columns: auto 2;
     }
+
+    &__phone {
+      display: block;
+
+      @include respond(phone) {
+        display: none;
+      }
+
+      &--mobile {
+      display: none;
+      margin-bottom: 2rem;
+
+      @include respond(phone) {
+        display: block;
+      }
+    }
+    
+    }
   }
 
   &__footer {

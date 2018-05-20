@@ -1,0 +1,19 @@
+// /////////////////////////
+// @@ BTN
+// ////////////////////////
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 1rem 2rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &--white {
+    border: solid 1px var(--color--white);
+    color: var(--color--white);
+  }
+}
