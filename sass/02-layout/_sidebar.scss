@@ -24,8 +24,12 @@
   &__contact {
     margin-bottom: 2rem;
 
+    
+
     @include respond(small-phone) {
       columns: auto 2;
+      display: flex;
+      justify-content: space-between;
     }
 
     &__phone {
@@ -36,14 +40,13 @@
       }
 
       &--mobile {
-      display: none;
-      margin-bottom: 2rem;
+        display: none;
 
-      @include respond(phone) {
-        display: block;
+        @include respond(phone) {
+          display: block;          
+          margin-bottom: 1.5rem;
+        }
       }
-    }
-    
     }
   }
 
