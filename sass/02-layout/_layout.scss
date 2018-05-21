@@ -10,20 +10,36 @@
     margin: 5rem auto;
     box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.1);
     border-radius: 2px;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px 1fr;
+    
+    grid-template-areas:
+      "header header nav"
+      "sidebar content content";
 
     @include respond(phone) {
       width: 100vw;
       box-shadow: none;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 250px repeat(2, auto);
+
+      grid-template-areas:
+        "header header"
+        "sidebar nav"
+        "content content";
     }
 
     @include respond(small-phone) {
       grid-template-columns: 1fr;
       grid-template-rows: 250px repeat(3, auto);
+
+      grid-template-areas: 
+        "header"
+        "nav"
+        "sidebar"
+        "content";
     }
 
     @include respond(big-desktop) {
@@ -35,35 +51,18 @@
 .header__logo {
   display: flex;
   justify-items: center;
-  grid-column: 1 / span 2;
-  grid-row: 1 / 2;
+  grid-area: header;
 
   &__img {
     display: block;
     max-width: 100%;
-    // height: auto;
-  }
-
-  @include respond(phone) {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
   }
 }
 
 .content {
   align-self: center;
   padding: 2rem;
-  grid-column: 2 / span 2;
-  grid-row: 2 / -1;
-
-  @include respond(phone) {
-    grid-column: 1 / -1;
-    grid-row: 3 / -1;
-  }
-
-  @include respond(small-phone) {
-    grid-row: 4 / -1;
-  }
+  grid-area: content;
 
   &--tip {
     padding: 2rem;

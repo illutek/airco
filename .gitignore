@@ -8,3 +8,5 @@ docker-compose.yml
 css/
 build/
 dist/
+route.html
+info.htm
